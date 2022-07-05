@@ -1,0 +1,29 @@
+@media print {
+    h1, h2, h3, h4, p {text-shadow: none}
+    #content-wrap > div {
+        background-color: white;
+        color: black;
+        margin: 0 20px 0;
+        padding: 0;
+        border-radius: 0;
+        overflow: auto;
+        position: relative;
+        box-shadow: none;
+        page-break-after: auto;
+
+    }
+    #geralt{height: 130mm;}
+    #yen{height: 50mm;}
+    #triss{height: 100mm;}
+    #ciri{height: 50mm;}
+
+    nav, iframe, footer, img{display:none}
+    .character{height: auto}
+    .character p, .adapt p {margin-right: 0}
+
+    body {
+        margin: 0;
+        color: #000;
+        background-color: #fff;
+    }
+}

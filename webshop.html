@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Webshop - Witcher</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="yes.css">
+</head>
+<body>
+<div id="page-container">
+<nav>
+    <ul>
+        <li><a href="history.html">Birodalmak</a></li>
+        <li><a href="charatcters.html">Karakterek</a></li>
+        <li><a id="nav-icon" href="main.html"><img src="img/icon.png" alt="icon"></a></li>
+        <li><a href="adapt.html">Adaptációk</a></li>
+        <li><a id="active" href="webshop.html">Webshop</a></li>
+    </ul>
+</nav>
+<div id="content-wrap">
+
+<!-- Regisztráció-->
+    <div class="tabla" id="reg">
+        <h1>Regisztráció</h1>
+        <form method="post" action="webshop.php"><table>
+        <tr>
+            <th><label for="uname"><b>felhasználónév</b></label></th>
+            <td><input type="text" id="uname" placeholder="lajos2000" name="uname" required minlength="6" maxlength="18"></td>
+        </tr>
+        <tr>
+            <th><label for="psw-reg"><b>jelszó</b></label></th>
+            <td><input type="password" placeholder="jelszo123" id="psw-reg" name="psw" required minlength="6" maxlength="18"></td>
+        </tr>
+        <tr>
+            <th><label for="psw-repeat"><b>jelszó újra</b></label></th>
+            <td><input type="password" placeholder="jelszo123" id="psw-repeat" name="psw-repeat" required minlength="6" maxlength="18"></td>
+        </tr>
+        <tr>
+            <th><label for="email">e-mail cím</label></th>
+            <td><input type="email" id="email" name="email" minlength="10" placeholder="lajos20@citrom.com" required></td>
+        </tr>
+        <tr>
+            <th><label for="address">cím</label></th>
+            <td><textarea rows="2"  id="address" name="address" minlength="10" placeholder="9999, Szántószállás Ötvös utca 33." required></textarea></td>
+
+        </tr>
+        <tr>
+            <th></th>
+            <td><button name="regisztracio" type="submit">Regisztráció</button></td>
+        </tr>
+    </table></form></div>
+
+<!-- Belépés -->
+    <div class="tabla" id="order">
+        <h1>Bejelentkezés</h1>
+        <form method="post" action="webshop.php"><table>
+            <tr>
+                <th><label for="name"><b>felhasználónév</b></label></th>
+                <td><input type="text" id="name" placeholder="lajos2000" name="uname-lgn" required minlength="6" maxlength="18"></td>
+            </tr>
+            <tr>
+                <th><label for="psw-lgn"><b>jelszó</b></label></th>
+                <td><input type="password" id="psw-lgn" placeholder="jelszo123" name="psw-lgn" required minlength="6" maxlength="18"></td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td><button name="login" type="submit">Bejelentkezés</button></td>
+            </tr>
+        </table></form></div>
+
+    <!--aside-->
+    <aside>
+        <div class="aside">
+        <img src="img/ws_ad.jpg" alt="ad">
+        </div>
+    </aside>
+
+</div>
+<!--Footer -->
+<footer>
+
+    <ul id="footerLeft">
+        <li><u>Készítette:</u></li>
+        <li><ul>
+            <li>Vizi Kristóf</li>
+            <li>Bende László</li></ul></li>
+    </ul>
+
+    <ul id="footerCenter">
+        <li><a href="https://www.facebook.com/thewitcher/"><img src="img/fb.png" alt="fblogo"></a></li>
+        <li><a href="https://www.instagram.com/witchernetflix/"><img src="img/insta.png" alt="instalogo"></a></li>
+    </ul>
+
+
+    <ul id="footerRight">
+        <li><a href="#top"><img src="img/totop.png" alt="btlogo"></a></li>
+    </ul>
+</footer>
+</div>
+</body>
+</html>

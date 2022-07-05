@@ -1,0 +1,243 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Háttérkép, betűtípus */
+body{
+
+    background-image: url("img/wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+body * {
+    text-shadow: rgba(40, 40, 40, 0.93) 2px 1px;
+    font-family: Verdana, fantasy;
+}
+
+::selection{
+    background-color: #DD4132;
+}
+
+/*kontent általános formázás*/
+#content-wrap{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    position: relative;
+    top: 50px;
+    height: auto;
+    min-height: 100vh;
+}
+
+#content-wrap > div {
+    background-color: rgba(41, 41, 41, 0.76);
+    color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.34) 3px 3px;
+}
+
+img{
+    border-radius: 6px;
+}
+
+/*navigációs bár, fejléc*/
+
+nav ul {
+    background-color: rgba(99, 67, 49, 0.87);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 97.2%;
+    z-index: 999;
+    border-radius: 0 0 18px 18px;
+    margin: auto;
+    list-style: none;
+}
+
+nav ul li a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    width: 22%;
+    transition: background-color 0.2s ease-in, text-shadow 0.2s ease-in;
+    border-radius: 18px;
+    margin: 0;
+    position: relative;
+    left: -20px;
+}
+
+#nav-icon{
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 4%;
+    float: left;
+    text-align: center;
+    padding: 0;
+}
+
+#nav-icon img{
+    width: 60px;
+    transition: background-color 0.2s ease-in;
+    border-radius: 18px;
+}
+
+nav ul li a:hover, #active:hover {
+    background-color: #ddd;
+    color: black;
+    text-shadow: none;
+    border-radius: 18px;
+}
+
+#active {
+    background-color: #408442;
+    color: white;
+}
+
+/*footer*/
+footer{
+    position: relative;
+    margin-top: 100px;
+}
+
+#footerLeft {
+    color:white;
+    float: left;
+}
+#footerLeft li {
+    list-style-type: none;
+}
+
+#footerCenter {
+    position: absolute;
+    left: 43%;
+}
+#footerCenter li {
+    display: inline;
+}
+#footerCenter img {
+    width: 55px;
+    margin-bottom: 10px;
+}
+
+#footerRight li {
+    display: inline;
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+
+/*PAGES*/
+
+/*birodalmak*/
+#cimer{
+    height: 670px;
+    width: auto;
+}
+
+/*karakter oldal*/
+.character{
+    min-height: 380px;
+}
+
+.character p{
+    position: relative;
+    margin-right: 250px;
+}
+
+.character img{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    width: 200px;
+}
+
+/*Teljes oldali kép*/
+.full-img img{
+    max-width: 60vw;
+    margin-left: 20vw;
+}
+
+/*webshop*/
+.tabla{
+    width: 400px;
+    margin: 60px;
+    float: right;
+}
+table{
+    width: 100%;
+}
+th{
+    float: right;
+}
+
+.ws_extra{
+    font-size: 13px;
+}
+
+input, button, textarea ,select{
+    border-radius: 10px;
+    background-color: rgba(32, 32, 32, 0.8);
+    color: white;
+    border-color: #f2f2f2;
+    border-width: thin;
+    text-align: center;
+    font-size: 19px;
+}
+select{margin-left: 70px;}
+td label{font-size: 19px;}
+
+button{
+    font-size: 17px;
+    margin: 7px;
+}
+
+/*aside*/
+aside{
+    max-width: 310px;
+    max-height: 310px;
+    float: left;
+
+    background-color: rgba(41, 41, 41, 0.76);
+    color: aliceblue;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: auto;
+    position: relative;
+    top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.34) 3px 3px;
+}
+.aside img {
+    width: 300px;
+    border-radius: 4px;
+}
+
+/*adapt page*/
+.ad-vid{
+    position: absolute;
+    right: 14px;
+    top: 18px;
+    width: 496px;
+    height: 279px;
+    overflow: visible;
+    border: none;
+}
+
+.adapt{
+    min-height: 280px;
+}
+.adapt p{
+    margin-right: 500px;
+}
